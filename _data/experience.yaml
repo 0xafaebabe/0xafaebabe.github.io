@@ -1,0 +1,60 @@
+- company: Qumulo
+  start: Jan 2021
+  end: present
+  position: Sr UX Designer
+
+- company: Studio D Radio Durans
+  start: Sep 2020
+  end: Dec 2020
+  position: Assoc Researcher
+  responsibilities: Interviewed research subjects and observed them in situ. Synthesized qualitative data. Developed and illustrated concept maps, journeys, workflows, frameworks, and charts. Assisted in identifying and recruiting leads. Wrote and created written report and deck for client firm.
+
+- company: Big Fish Games
+  start: Jan 2020
+  end: Sep 2020
+  position: Sr UX Designer
+  responsibilities: Provided UX/UI consulting for mobile and causal games to in-house and external studios. Wireframed, prototyped, and designed UIs for user onboarding, social and community features, as well as other meta-game experiences. Developed criteria and heuristics tailored to game design in order to have a consistent company-wide UX evaluation process.
+  accomplishments:
+    - "Games: Gummy Drop · Decurse · Knittens · Coin Heist"
+    - Using stakeholder research, created best practices, process, and design pillars for the UX team’s vision and roadmap, and to help the organization to better understand the value of UX.
+    - Created high fidelity UI prototypes for Coin Heist player validation testing. Designed and storyboarded mini-games for Gummy Drop.
+    - Developed process and evaluation criteria for UX lifecycle, as well as gender inclusion guidelines.
+    - Designed a web-based career development platform from research, to wireframing flows, to final visual design comps.
+
+- company: projekt202
+  start: 2013
+  end: 2019
+  position: Sr UX Designer · Design Manager
+  responsibilities: Led design teams as creative director. Managed 8 direct reports. Created flows and wireframes. Designed user interfaces for desktop and mobile applications. Prototyped applications in Sketch and Axure. Collaborated with product managers to set strategic direction of design projects. Performed user research, synthesized data from research into personas and opportunities, and ran usability testing sessions.
+  accomplishments:
+    - "Key clients: Amazon · Apple · CapitalOne · Dell · Mercedes Benz · Novo Nordisk"
+    - Created proposals and narratives of prior work that won the Seattle office $850,000 in new client work in 2018 allowing it to grow the local design group from one person (self) to eight direct reports.
+    - Embedded within Amazon Web Services to help create the Polaris design system to standardize all AWS user interfaces, and re-designed multiple products using that system.
+    - Wrote detailed scenarios and created storyboards to validate concepts for Dell’s enterprise support team, and led a 3 person design team through participatory design study to build an MVP.
+    - Designed a high-fidelity interactive prototype for LeGrand to fully understand information architecture and micro interactions on a commercial 4” touch-screen lighting controller.
+    - Created multiple look and feel concepts for Novo Nordisk’s mobile diabetes tracking app.
+
+- company: Nixie Design Studio
+  start: 2013
+  end: present
+  position: Principal Designer · Founder
+  responsibilities: Provide UX and product design consulting for startup software companies looking to evolve their minimum viable products to the next step via experience strategy, user research, product design and prototyping, and software development.
+  accomplishments:
+    - "Key clients: Softmatch · United Way of Austin · Sparkhouse · UserAde · Blue Moon Software"
+    - Designed dashboard UIs for Softmatch, and helped implement form interfaces in Salesforce.
+    - Performed in-depth user research to help United Way of Greater Austin understand their users. Designed a working prototype of a possible MVP for them to socialize and build buy-in within the organization.
+    - Expanded upon a broad and confusing cryptocurrency concept at UserAde from paper to storyboards, and using our new understandings built a functional mobile prototype with visual UI fit-and-finish.
+    - Created workflows and visual comps to simplify Blue Moon Software’s document/form generation system and e-commerce system platform.
+
+- company: Source Spring
+  start: 2008
+  end: 2013
+  position: Product Design Manager · Co-Founder
+  responsibilities: Consulted for startups as a UX designer, product manager, and technologist. Helped them design, build and launch new products or product offerings. Performed user research and designed concepts based on those results. Created wireframes and prototypes. Acted as a "virtual CTO" helping companies define and refine system architecture and scaling past initial launch.
+
+- company: Front Gate Tickets
+  start: 2002
+  end: 2008
+  position: Director of Product Development · Co-Founder
+  responsibilities: Continuously analyzed product requirements from venues, promoters, and artists to handle new requirements like multi-day festivals, reserved seating, merchandise sales, and season tickets. Architected, designed, programmed, and implemented web application and desktop software suite as well as database back end. Managed product road map and oversaw entire software life cycle from requirements gathering and design to QA and maintenance over several full product releases and migrations.
+

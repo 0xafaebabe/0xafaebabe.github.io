@@ -1,0 +1,356 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .change {
+    color: #000;
+  }
+}
+
+body {
+  @apply .font-body;
+  @apply .bg-primary;
+  @apply .text-primary;
+  @apply .leading-loose;
+  @apply .font-light;
+}
+
+h1 {
+  @apply .font-display;
+  @apply .font-extrabold;
+  @apply .text-6xl;
+  @apply .mx-auto;
+  @apply .mt-16;
+  @apply .mb-16;
+  @apply .text-center;
+}
+
+h2 {
+  @apply .font-display;
+  @apply .font-extrabold;
+  @apply .text-2xl;
+  @apply .leading-tight;
+  @apply .pb-2;
+}
+
+h3 {
+  @apply .font-display;
+  @apply .text-2xl;
+  @apply .leading-tight;
+  @apply .pb-2;
+}
+
+h4 {
+  @apply .font-display;
+  @apply .font-extrabold;
+}
+
+h5 {
+  @apply .font-display;
+  @apply .font-semibold;
+}
+
+h6 {
+  @apply .mt-8;
+  @apply .font-display;
+  @apply .font-semibold;
+  @apply .uppercase
+}
+
+p, div, li {
+  @apply .font-body;
+}
+
+p + p {
+  @apply .mt-8;
+}
+
+p + h2 {
+  @apply .mt-8;
+}
+
+h4 + p {
+  @apply .mt-8;
+}
+
+strong {
+  @apply .font-extrabold;
+}
+
+
+em {
+  @apply .font-semibold;
+  @apply .not-italic;
+}
+
+button {
+  @apply .bg-tertiary;
+  @apply .pt-2;
+  @apply .pb-2;
+  @apply .pl-4;
+  @apply .pr-4;
+  @apply .mt-8;
+  @apply .mb-4;
+  @apply .font-semibold;
+  @apply .uppercase;
+  @apply .duration-200;
+  @apply .shadow-lg;
+  min-width: 8rem;
+}
+
+button.button-tertiary {
+  @apply .pl-0;
+  @apply .pr-0;
+  @apply .pt-2;
+  @apply .pb-2;
+  @apply .ml-0;
+  @apply .mr-0;
+  @apply .mt-2;
+  @apply .mb-2;
+  @apply .bg-transparent;
+  @apply .uppercase;
+  @apply .font-semibold;
+  @apply .text-sm;
+  @apply .duration-200;
+  @apply .shadow-none;
+  min-width: 0;
+}
+
+button:active {
+  @apply .shadow-md;
+}
+
+button.button-tertiary:active {
+  @apply .shadow-none;
+  @apply .text-tertiary;
+}
+
+button.button-tertiary:hover {
+  @apply .text-secondary;
+}
+
+button:focus {
+  border: none;
+}
+
+nav {
+  @apply .bg-tertiary;
+  @apply .pt-2;
+  @apply .pb-2;
+  @apply .shadow-lg;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  height: 3em;
+}
+
+nav.portfolio {
+  @apply .bg-secondary;
+}
+
+nav div {
+  @apply .flex;
+  @apply .flex-wrap;
+  @apply .justify-between;
+}
+
+nav .compass {
+  @apply .float-left;
+  margin-right: .25em;
+  height: 2em;
+}
+
+nav ul {
+  @apply .flex-auto;
+  @apply .flex;
+  @apply .justify-end;
+}
+
+nav ul li {
+  @apply .ml-6;
+}
+
+nav li.active {
+  @apply .font-extrabold;
+}
+
+nav a#home {
+  @apply .font-extrabold;
+}
+
+nav a i {
+  cursor: pointer;
+  padding-top: .15em;
+}
+
+nav .back, nav .close {
+  @apply flex-none;
+}
+
+nav .title {
+  @apply flex-auto;
+  @apply text-center;
+  @apply font-semibold;
+}
+
+nav .title p {
+  @apply text-center;
+  width: 100%;
+}
+
+#portfolio article {
+  @apply .pt-8;
+}
+
+#portfolio img {
+  @apply .relative;
+  top: 4rem;
+  @apply .shadow-xl;
+  @apply .object-fill;
+  z-index: 1;
+}
+
+#portfolio img + img {
+  @apply: .pt-8;
+}
+
+#portfolio button {
+  @apply: .pb-none;
+}
+
+div.break-lg {
+  height: 4rem;
+}
+
+div.break-xl {
+  height: 16rem;
+}
+
+section#experience div {
+  @apply .leading-normal;
+}
+
+section#experience ul {
+  @apply .list-none;
+  @apply .list-outside;
+}
+
+section#experience li:before {
+  content: '\2B1D'; /* 25AA */
+  float: left; 
+  margin-left: -1rem;
+}
+
+section#experience article + article {
+  @apply .mt-8;
+}
+
+div.quotemark {
+  @apply .align-top;
+  @apply .font-extrabold;
+  @apply .text-secondary;
+  @apply .text-6xl;
+  @apply .text-right;
+  @apply .relative;
+  top: -2.5rem;
+}
+
+div.quotation {
+  @apply .font-semibold;
+}
+
+div.quotation p.cite {
+  @apply .font-light;
+  @apply .leading-normal;
+  text-indent: -1rem;
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+}
+
+footer {
+  @apply .bg-secondary;
+  @apply .text-xs;
+  @apply .leading-normal;
+  @apply .p-4;
+}
+
+div.avatar img {
+  width: 30%;
+  display: block;
+  margin: 0 auto 4 auto;
+  clip-path: circle(50% at center);
+}
+
+input, textarea {
+  padding: .5em;
+  border: none;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4) inset;
+  @apply .text-tertiary;
+}
+
+input {
+  margin: 0 0 2em 0;
+}
+
+textarea {
+  margin: none;
+}
+
+input:focus, textarea:focus, select:focus, button:focus {
+  outline: none;
+}
+
+div.gallery {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll-y;
+  @apply bg-primary;
+  transition: opacity 0.3s ease;
+}
+
+div.gallery div.close {
+  @apply text-right;
+  @apply text-4xl;
+}
+
+div.gallery div.close a {
+  padding: 0 1em 1em 1em;
+  margin: 0;
+  cursor: pointer;
+}
+
+div.gallery h2+h3 {
+  padding-top: 1em;
+}
+
+.portfolio h1 {
+  @apply .mb-1;
+  @apply .pb-1;
+  @apply .text-left;
+}
+
+.portfolio img {
+  @apply .relative;
+  top: 2rem;
+  @apply .shadow-xl;
+  @apply .object-fill;
+  z-index: 1;
+}
+
+.portfolio img + img {
+  @apply: .pt-8;
+}
+
+.portfolio img + p {
+  @apply .relative;
+  top: 3rem;
+  z-index: 10;
+}
+

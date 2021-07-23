@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      {% if title %}{{title}}{% endif %}
+    </title>
+    {% if keywords %}<meta name="keywords" content="{{keywords}}"/>{% endif %}
+    {% if description %}<meta name="description" content="{{description}}"/>{% endif %}
+
+    <meta charset="UTF-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/styles.css?v={% version %}"/>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/images/icons/apple-touch-icon-152x152">
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="{{ '/scripts/main.js' | url }}" defer></script>
+
+    {% block head %}{% endblock %}
+  </head>
+  <body>
+    <div id="app">
+      <div class="flex flex-col">
+        {{ nav | safe }}
+        <main id="top" name="top" class="flex-1">
+          {{ content | safe }}
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

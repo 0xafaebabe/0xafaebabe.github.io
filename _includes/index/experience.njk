@@ -1,0 +1,48 @@
+<!-- experience -->
+<section id="experience" name="experience" class="container grid grid-cols-1">
+  <header><h1>Experience</h1></header>
+
+  {%- for position in experience -%}
+    {% set c = 1 + c or 0 %}
+    <article class="container grid grid-cols-1 md:grid-cols-12 gap-4">
+      <div class="md:col-span-3 md:text-right">
+        <h5>{{ position.company }}</h5>
+        <div class="dates-worked">
+          {{ position.start }} – {{ position.end }}
+        </div>
+      </div>
+      <div class="hidden md:grid md:col-span-1"></div>
+      <div class="md:col-span-6">
+        <h4>{{ position.position }}</h4>
+        {% if position.responsibilities %}
+          <p>
+            <em>Responsibilities:</em>
+            {{ position.responsibilities }}
+          </p>
+        {% endif %}
+
+        {% if position.accomplishments %}
+          <div x-data="{ open{{c}}: false }">
+            <button class="button-tertiary" x-on:click="open{{c}}=!open{{c}}">
+              <span x-show="open{{c}}">▾ hide details</span>
+              <span x-show="!open{{c}}">▸ show details</span>
+            </button>
+            <ul x-show="open{{c}}">
+              {%- for accomplishment in position.accomplishments -%}
+              <li>{{ accomplishment }}</li>
+              {%- endfor -%}
+            </ul>
+          </div>
+        {% endif %}
+
+      </div>
+    </article>
+  {%- endfor -%}
+
+  <div class="text-center">
+    <a href="https://assets.kyliejack.com/kyliejack/documents/kylie%20jack%20resume.pdf" target="_blank">
+      <button>Download Resume</button>
+    </a>
+  </div>
+</section>
+<div class="break-lg"></div>
