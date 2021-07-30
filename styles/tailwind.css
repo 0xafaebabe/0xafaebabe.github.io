@@ -84,10 +84,7 @@ em {
   @apply .not-italic;
 }
 
-ul {
-}
-
-li {
+ul.square li {
   list-style-type: square;
   @apply .mt-4;
 }
