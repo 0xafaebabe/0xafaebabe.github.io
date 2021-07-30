@@ -84,6 +84,14 @@ em {
   @apply .not-italic;
 }
 
+ul {
+}
+
+li {
+  list-style-type: square;
+  @apply .mt-4;
+}
+
 button {
   @apply .bg-tertiary;
   @apply .pt-2;
